@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Supima cotton</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -38,11 +39,80 @@
       </nav>
     </div>
   </header>
-<main>
-  main
-</main>
-<footer>foter</footer>
-<script src="main.js"></script>
+  <div class="blur-bg-overlay"></div>
+  <div class="form-popup">
+    <span class="close-btn">+</span>
+    <div class="form-popup__box login">
+      <div class="form-popup__details">
+        <h2 class="subtitle">Welcome Back, Friend!</h2>
+        <p class="text">
+          Log in with your details to continue enjoying all the benefits of staying connected with us. We’re thrilled to
+          see you
+          again!
+        </p>
+      </div>
+      <div class="form-popup__content">
+        <h2 class="subtitle">LOGIN</h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" id="email" name="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" name="password" required>
+            <label>Password</label>
+          </div>
+          <a class="forgot-pass" href="#">Forgot password?</a>
+          <button class="form__btn" type="submit">Log In</button>
+        </form>
+        <div class="bottom-link">
+          <p>Don't have an account?
+            <a href="#" id="signup-link">Signup </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="form-popup__box signup">
+      <div class="form-popup__details">
+        <h2 class="subtitle">Join Us Today!</h2>
+        <p class="text">
+          Become a valued member of our community by signing up with your personal details. We can’t wait to have you on
+          board!
+        </p>
+      </div>
+      <div class="form-popup__content">
+        <h2 class="subtitle">SIGNUP</h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" id="email" name="email" required>
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" name="password" required>
+            <label>Create password</label>
+          </div>
+          <div class="policy-text">
+            <input type="checkbox" id="policy">
+            <label for="policy">
+              I agree the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form__btn" type="submit">Sign Up</button>
+        </form>
+        <div class="bottom-link">
+          <p>Already have an account?
+            <a href="#" id="login-link">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    main
+  </main>
+  <footer>foter</footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

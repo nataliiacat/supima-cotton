@@ -661,6 +661,9 @@ form :where(.forgot-pass, .policy-text) {
   .form-popup {
     width: 75%;
   }
+  .form-popup__details{
+    display: none;
+  }
 
   .hero__content {
     display: flex;

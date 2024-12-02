@@ -1,7 +1,16 @@
+const navbarMenu = document.querySelector(".header__nav .header__menu");
+const menuBtn = document.querySelector(".menu-btn");
+const hideMenuBtn = navbarMenu.querySelector(".close-btn");
 const showPopupBtn = document.querySelector(".login-btn");
 const formPopup = document.querySelector(".form-popup");
 const hidePopupBtn = document.querySelector(".form-popup .close-btn");
 const loginSignupLink = document.querySelectorAll(".form-popup__box .bottom-link a")
+
+menuBtn.addEventListener("click", () => {
+navbarMenu.classList.toggle("show-menu");
+});
+
+hideMenuBtn.addEventListener("click", () => menuBtn.click());
 
 showPopupBtn.addEventListener("click", () => {
   document.body.classList.toggle("show-popup");

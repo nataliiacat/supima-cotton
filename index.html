@@ -14,21 +14,21 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav">
-
+        <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
         <a class="logo" href="index.html">
           <i class="fa-brands fa-cotton-bureau"></i>
           <h2 class="logo-name">SUPIMA</h2>
         </a>
 
         <ul class="header__menu">
-          <li class="header__menu-item"><a href="#">Home</a></li>
-          <li class="header__menu-item"><a href="#">About us</a></li>
-          <li class="header__menu-item"><a href="#">Models</a></li>
-          <li class="header__menu-item"><a href="#">Revies</a></li>
-          <li class="header__menu-item"><a href="#">Why us?</a></li>
-          <li class="header__menu-item"><a href="#">Contact</a></li>
+          <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+          <li class="header__menu-item"><a class="menu-item__link" href="#">Home</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#about">About us</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#">Models</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#">Revies</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#">Why us?</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#">Contact</a></li>
         </ul>
-
         <div class="header__actions">
           <button class="login-btn" aria-label="Open login form"><i class="fa-solid fa-user"></i></button>
           <div class="cart">
@@ -41,7 +41,7 @@
   </header>
   <div class="blur-bg-overlay"></div>
   <div class="form-popup">
-    <span class="close-btn">+</span>
+    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
     <div class="form-popup__box login">
       <div class="form-popup__details">
         <h2 class="subtitle">Welcome Back, Friend!</h2>
@@ -108,10 +108,84 @@
       </div>
     </div>
   </div>
-  <main>
-    main
-  </main>
-  <footer>foter</footer>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__info">
+          <h1 class="title hero__title">Supima Cotton — Comfort that Lasts</h1>
+          <p class="subtitle hero__description">
+            Supima Cotton isn’t just fabric, it’s a quality that lasts. By choosing a shirt made from this premium
+            cotton, you get softness, breathability, and style every day. Buy now and feel the premium comfort.
+          </p>
+          <div class="hero__buttons">
+            <a href="#" class="btn__shop-now">Shop Now</a>
+            <a href="#" class="btn__discover-more">Discover More</a>
+          </div>
+        </div>
+        <div class="img__hero">
+          <img src="images/hero-image.png" alt="t-short">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="features-container">
+        <div class="feature">
+          <div class="feature-title">
+            <i class="fa-solid fa-feather"></i>
+            <h3 class="subtitle">High Quality</h3>
+          </div>
+          <p class="feature-description text">It is a cotton with extra long and clean fiber. The fabric obtained from
+            weaving is particularly smooth, compact and
+            shiny.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">
+            <i class="fa-solid fa-seedling"></i>
+            <h3 class="feature-title subtitle">Comfort</h3>
+          </div>
+          <p class="feature-description text">
+            It is characterized by excellent elasticity despite being naturally free of elastane. It softly envelops the
+            body as in
+            a caress for a pleasant sensation on the skin.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-title">
+            <i class="fa-solid fa-shield feature-icon"></i>
+            <h3 class="feature-title subtitle">Resistance</h3>
+          </div>
+          <p class="feature-description text">The structure of the fabric guarantees excellent resistance to washing
+            while maintaining the characteristics of the
+            product unchanged.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-us" id="about">
+    <div class="container">
+      <h1 class="title about-us__title">
+        AMERICAN-GROWN LUXURY
+      </h1>
+      <div class="about-us__content">
+        <div class="about-us__info">
+          <h3 class="subtitle">American-Grown Luxury</h3>
+          <p class="text">Supima is the marketing brand for American-grown Pima cotton. Established in 1954, the Supima
+            organization was formed in
+            El Paso, Texas in an effort to brand and promote Supima cotton. The Supima name was derived from a blending
+            of the words
+            “Superior” and “Pima."</p>
+          <p class="text">Today, Supima focuses on partnering with leading brands across fashion and home markets to
+            ensure that consumers have
+            access to and receive top quality products crafted with Supima’s premium cotton.</p>
+          <a class="about-us__btn" href="#">FIND OUT MORE</a>
+        </div>
+        <div class="about-us__img"><img class="about-us__img1" src="images/about-us.jpg" alt="cotton field">
+          <img class="about-us__img2" src="images/about-us(768).jpg" alt="cotton field">
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="main.js"></script>
 </body>
 

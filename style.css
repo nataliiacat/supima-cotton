@@ -240,6 +240,7 @@ a {
 }
 
 .form-popup {
+  z-index: 1000;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -604,22 +605,25 @@ body.active__cart__tab .cart__tab {
 .about-us__btn:hover {
   background-color: #262626;
 }
-.models{
+
+.models {
   position: relative;
-    background-color: #f0f0f0;
-    padding-top: 60px;
+  background-color: #f0f0f0;
+  padding-top: 60px;
 }
-.models::before{
+
+.models::before {
   content: '';
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: #f0f0f0;
-    border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #f0f0f0;
+  border-radius: 50% 50% 0 0;
 }
-.models .title{
+
+.models .title {
   text-align: center;
   margin-top: -55px;
 }
@@ -673,30 +677,35 @@ body.active__cart__tab .cart__tab {
   letter-spacing: 2px;
   box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.1);
 }
-.cart__list li{
+
+.cart__list li {
   display: grid;
   grid-template-columns: 100px repeat(3, 1fr);
   color: #fff;
   row-gap: 5px;
   margin-bottom: 20px;
 }
-.cart__list li div{
+
+.cart__list li div {
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 1.5px;
 }
-.cart__list li img{
+
+.cart__list li img {
   width: 90%;
 }
-.cart__list button{
+
+.cart__list button {
   width: auto;
   border: none;
   background-color: #f0f0f0;
   text-align: center;
   border-radius: 50%;
 }
-.cart__list .count{
+
+.cart__list .count {
   margin: 0 10px;
 }
 
@@ -797,6 +806,11 @@ body.active__cart__tab .cart__tab {
 
   .about-us__img img {
     margin: -100px 0 0 -100px;
+  }
+
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -924,5 +938,10 @@ body.active__cart__tab .cart__tab {
   .about-us__img {
     max-width: 100%;
     position: relative;
+  }
+
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

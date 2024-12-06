@@ -13,6 +13,34 @@ const list = document.querySelector(".products__list");
 let listCard = document.querySelector(".cart__list");
 let total = document.querySelector(".cart__button__total");
 let quantity = document.querySelector(".cart-count");
+const swiper = new Swiper('.js-testimonials-slider', {
+  slidesPerView: 3, 
+  spaceBetween: 30, 
+  slidesPerGroup: 1, 
+  grabCursor: true, 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, 
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3, 
+      slidesPerGroup: 1,
+    },
+    768: {
+      slidesPerView: 2, 
+      slidesPerGroup: 1,
+    },
+      480: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    300:{
+      slidesPerView: 1, 
+      slidesPerGroup: 1,
+    }
+  },
+});
 
 iconCart.addEventListener('click', () => {
   body.classList.toggle('active__cart__tab');
@@ -123,7 +151,7 @@ function reloadCard() {
     }
   });
 
-  total.innerText =`${ totalPrice.toFixed(2) } $`;
+  total.innerText = `${totalPrice.toFixed(2)} $`;
   quantity.innerText = count;
 }
 

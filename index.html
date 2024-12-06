@@ -7,6 +7,7 @@
   <title>Supima cotton</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,10 +23,10 @@
 
         <ul class="header__menu">
           <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
-          <li class="header__menu-item"><a class="menu-item__link" href="#">Home</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#home">Home</a></li>
           <li class="header__menu-item"><a class="menu-item__link" href="#about">About us</a></li>
-          <li class="header__menu-item"><a class="menu-item__link" href="#">Models</a></li>
-          <li class="header__menu-item"><a class="menu-item__link" href="#">Revies</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#models">Models</a></li>
+          <li class="header__menu-item"><a class="menu-item__link" href="#reviews">Reviews</a></li>
           <li class="header__menu-item"><a class="menu-item__link" href="#">Why us?</a></li>
           <li class="header__menu-item"><a class="menu-item__link" href="#">Contact</a></li>
         </ul>
@@ -108,7 +109,7 @@
       </div>
     </div>
   </div>
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="container">
       <div class="hero__content">
         <div class="hero__info">
@@ -118,8 +119,8 @@
             cotton, you get softness, breathability, and style every day. Buy now and feel the premium comfort.
           </p>
           <div class="hero__buttons">
-            <a href="#" class="btn__shop-now">Shop Now</a>
-            <a href="#" class="btn__discover-more">Discover More</a>
+            <a href="#models" class="btn__shop-now">Shop Now</a>
+            <a href="#details" class="btn__discover-more">Discover More</a>
           </div>
         </div>
         <div class="img__hero">
@@ -186,7 +187,7 @@
       </div>
     </div>
   </section>
-  <section class="models">
+  <section class="models" id="models">
     <div class="container">
       <h1 class="title">Shop Supima Cotton T-Shirt</h1>
       <div class="product-slider">
@@ -204,7 +205,7 @@
       <button class="cart__button cart__button__total">0</button>
     </div>
   </div>
-  <section class="details">
+  <section class="details" id="details">
     <div class="container">
       <h1 class="title">What Makes This T-Shirt Unique?</h1>
       <div class="product__details">
@@ -252,7 +253,122 @@
       </div>
     </div>
   </section>
-
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h1 class="title reviews__title">What Our Customers Say</h1>
+      <div class="swiper testimonials-slider js-testimonials-slider">
+        <div class="reviews__inner swiper-wrapper">
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__info">
+              <img src="images/ivan.jpg" alt="Ivan Petrovich">
+              <div class="reviews__content">
+                <h3 class="subtitle">Ivan Petrovich</h3>
+                <p class="reviews__product">T-Shirt midnight blue</p>
+              </div>
+            </div>
+            <p class="reviews__text">Such a great t-shirt! Soft, fits perfectly, and the fabric feels amazing.</p>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__info">
+              <img src="images/olga.jpg" alt="Olga Viktorovna">
+              <div class="reviews__content">
+                <h3 class="subtitle">Olga Viktorovna</h3>
+                <p class="reviews__product">T-Shirts white and black
+                </p>
+              </div>
+            </div>
+            <p class="reviews__text">Great fit and keeps its shape after washing.</p>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__info">
+              <img src="images/maxim.jpg" alt="Maxim Andreevich">
+              <div class="reviews__content">
+                <h3 class="subtitle">Maxim Andreevich</h3>
+                <p class="reviews__product">T-Shirt red</p>
+              </div>
+            </div>
+            <p class="reviews__text">I’m very pleased with my Supima Cotton T-shirt. It’s super comfortable, and the
+              material feels high-quality.</p>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__info">
+              <img src="images/tatyana.jpg" alt="Tatyana Nikolaevna">
+              <div class="reviews__content">
+                <h3 class="subtitle">Tatyana Nikolaevna</h3>
+                <p class="reviews__product">T-Shirt light grey</p>
+              </div>
+            </div>
+            <p class="reviews__text">Love this Supima Cotton T-shirt! recommend.</p>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__info">
+              <img src="images/sergey.jpg" alt="Sergey Alekseevich">
+              <div class="reviews__content">
+                <h3 class="subtitle">Sergey Alekseevich</h3>
+                <p class="reviews__product">T-Shirt graphite grey</p>
+              </div>
+            </div>
+            <p class="reviews__text">I’m very pleased with my Supima Cotton T-shirt. I wear it
+              all the time and it still looks great after many washes.</p>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__info">
+              <img src="images/marina.jpg" alt="Marina Igorevna">
+              <div class="reviews__content">
+                <h3 class="subtitle">Marina Igorevna</h3>
+                <p class="reviews__product">T-Shirt midnight blue</p>
+              </div>
+            </div>
+            <p class="reviews__text">Excellent quality! I’m really happy with it.</p>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination js-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 
